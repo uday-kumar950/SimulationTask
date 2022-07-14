@@ -5,20 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version => ruby-3.1.2
 
-* System dependencies
+* Rails version => 7.0.3.1
 
-* Configuration
+* Gems used => ['bootstrap-sass', 'jquery-rails', 'activerecord-import', "debug", 'multi-select-rails', 'rspec-rails']
 
-* Database creation
+* Setup command => rake db:create db:migrate db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* How to run the test suite => rspec spec/controllers/..
 
 * ...

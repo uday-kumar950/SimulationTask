@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emp_name: MyString
+  dob: 2022-07-12
+  email: MyString
+
+two:
+  emp_name: MyString
+  dob: 2022-07-12
+  email: MyString

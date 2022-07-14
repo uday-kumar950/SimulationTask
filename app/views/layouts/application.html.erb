@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>SimulationTask</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand pull-right" href="<%= blind_dates_path%>">    
+    BlindDates
+  </a>
+  <a class="navbar-brand pull-right" href="<%= employees_path%>">    
+    Employees
+  </a>
+  <a class="navbar-brand pull-right" href="<%= teams_path%>">    
+    Teams
+  </a>
+</nav>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

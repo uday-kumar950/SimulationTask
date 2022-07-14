@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blind dates</h1>
+
+<div id="blind_dates">
+  <% @blind_dates.each do |blind_date| %>
+    <%= render blind_date, employees_hash: @employees_hash %>
+    <p>
+      <%= link_to "Show this blind date", blind_date %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blind date", new_blind_date_path %>

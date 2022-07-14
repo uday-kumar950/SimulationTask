@@ -1,0 +1,16 @@
+<div id="<%= dom_id blind_date %>">
+  <p>
+    <strong>Employees:</strong>
+    <%= employees_hash.reject{|k, v| !blind_date.employee_ids.include?(k.to_s)}.values%>
+    
+    <strong>Lunch date:</strong>
+    <%= blind_date.lunch_date%>
+
+    <strong>Restaurant name:</strong>
+    <%= blind_date.restaurant_name%>
+
+    <strong>Group leader:</strong>
+    <%= employees_hash[blind_date.group_leader_id]%>
+  </p>
+
+</div>

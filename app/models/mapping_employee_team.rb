@@ -1,0 +1,3 @@
+class MappingEmployeeTeam < ApplicationRecord
+	
+end

@@ -1,0 +1,15 @@
+<h1>New team</h1>
+
+<%= render "form", team: @team %>
+
+<br>
+
+<div>
+  <%= link_to "Back to teams", teams_path %>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#employee_ids').multiselect();
+    });
+</script>

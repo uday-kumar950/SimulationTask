@@ -1,0 +1,28 @@
+<%= form_with(model: team) do |form| %>
+  <% if team.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+        <% team.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :full_name, style: "display: block" %>
+    <%= form.text_field :full_name, required: true %>
+  </div>
+
+  <div>
+    <%= form_tag :employees, style: "display: block" %>
+    <%= select_tag "employee_ids", options_from_collection_for_select(@unassigned_employees, "id", "emp_name"), :include_blank => true, :multiple => true%>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
